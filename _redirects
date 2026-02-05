@@ -1,0 +1,3 @@
+# Force canonical domain
+https://kanun-digital.netlify.app/* https://kanun.digital/:splat 301!
+http://kanun.digital/* https://kanun.digital/:splat 301!
