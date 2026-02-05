@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaNun Digital | Family Security & Digital Safety Consulting</title>
+    <meta name="description" content="Fortune 500 security expertise for families in crisis. Digital safety sweeps, device intervention, custody tech consulting in Los Angeles.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Header */
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #2563eb;
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            color: #2563eb;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: #4a5568;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.2s;
+        }
+        
+        .cta-button:hover {
+            background: #1d4ed8;
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            background: #f8fafc;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .trust-bar p {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+        
+        .trust-items {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            font-weight: 600;
+            color: #334155;
+        }
+        
+        /* Services */
+        .services {
+            padding: 80px 0;
+        }
+        
+        .services h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 48px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+        
+        .service-card {
+            background: #f8fafc;
+            padding: 32px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: #1a1a2e;
+        }
+        
+        .service-card p {
+            color: #4a5568;
+            margin-bottom: 16px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .service-card li {
+            padding: 6px 0;
+            color: #4a5568;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .service-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+        
+        .price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2563eb;
+        }
+        
+        /* About */
+        .about {
+            padding: 80px 0;
+            background: #1a1a2e;
+            color: white;
+        }
+        
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+        
+        .about p {
+            color: #cbd5e1;
+            margin-bottom: 16px;
+        }
+        
+        .credentials {
+            background: rgba(255,255,255,0.1);
+            padding: 24px;
+            border-radius: 12px;
+        }
+        
+        .credentials h3 {
+            font-size: 1rem;
+            margin-bottom: 16px;
+            color: #94a3b8;
+        }
+        
+        .credentials ul {
+            list-style: none;
+        }
+        
+        .credentials li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.95rem;
+        }
+        
+        .credentials li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Contact */
+        .contact {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+        
+        .contact p {
+            color: #4a5568;
+            margin-bottom: 32px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            text-align: center;
+        }
+        
+        .contact-item strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .contact-item a {
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 24px 0;
+            border-top: 1px solid #e5e5e5;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .trust-items {
+                gap: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">KaNun <span>Digital</span></a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Digital Safety <span>When It Matters Most</span></h1>
+            <p>Fortune 500 security expertise protecting families in crisis. Surveillance detection, device intervention, and custody tech consulting in Los Angeles.</p>
+            <a href="#contact" class="cta-button">Get Confidential Help</a>
+        </div>
+    </section>
+    
+    <section class="trust-bar">
+        <div class="container">
+            <p>TRUSTED EXPERTISE FROM</p>
+            <div class="trust-items">
+                <span class="trust-item">Netflix</span>
+                <span class="trust-item">Sony</span>
+                <span class="trust-item">Everbridge</span>
+                <span class="trust-item">21+ Years Security Leadership</span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="services">
+        <div class="container">
+            <h2>How We Help</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🔍 Digital Safety Sweep</h3>
+                    <p>Comprehensive detection of surveillance threats for individuals leaving dangerous relationships or preparing for custody proceedings.</p>
+                    <ul>
+                        <li>Home & vehicle bug detection</li>
+                        <li>Network security audit</li>
+                        <li>Device forensics (spyware/stalkerware)</li>
+                        <li>Court-ready documentation</li>
+                    </ul>
+                    <span class="price">Starting at $1,500</span>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📱 Device Addiction Intervention</h3>
+                    <p>Technical and behavioral support for families with children whose device use has become destructive.</p>
+                    <ul>
+                        <li>Family situation assessment</li>
+                        <li>Technical controls implementation</li>
+                        <li>Network-level restrictions</li>
+                        <li>30-day follow-up support</li>
+                    </ul>
+                    <span class="price">Starting at $800</span>
+                </div>
+                
+                <div class="service-card">
+                    <h3>⚖️ Custody Tech Consulting</h3>
+                    <p>Expert guidance for attorneys, mediators, and parents navigating technology issues in custody disputes.</p>
+                    <ul>
+                        <li>Digital evidence consultation</li>
+                        <li>Co-parenting app setup</li>
+                        <li>Device sharing recommendations</li>
+                        <li>Expert witness testimony</li>
+                    </ul>
+                    <span class="price">Starting at $500</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <h2>Why KaNun Digital</h2>
+                    <p>When you're facing a crisis—whether it's a stalker ex, a child lost to screens, or a custody battle where digital evidence matters—you need someone who understands both the technology and the stakes.</p>
+                    <p>I spent 21 years protecting Fortune 500 companies. I've led security at Netflix, built programs at Sony and Everbridge, and secured over a billion dollars in M&A transactions. Now I apply that same expertise to protecting families.</p>
+                    <p>Every engagement is confidential. Every report is thorough. Every recommendation is actionable.</p>
+                </div>
+                <div class="credentials">
+                    <h3>CREDENTIALS</h3>
+                    <ul>
+                        <li>Certified Ethical Hacker (CEH)</li>
+                        <li>21+ Years Security Leadership</li>
+                        <li>Fortune 500 Experience</li>
+                        <li>Board-Level Advisor</li>
+                        <li>Los Angeles Based</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Confidential Consultation</h2>
+            <p>All inquiries are handled with strict confidentiality. Reach out to discuss your situation.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>PHONE</strong>
+                    <a href="tel:+19524847795">(952) 484-7795</a>
+                </div>
+                <div class="contact-item">
+                    <strong>EMAIL</strong>
+                    <a href="mailto:contact@kanundigital.com">contact@kanundigital.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>LOCATION</strong>
+                    <span>Los Angeles, CA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 KaNun Digital. All rights reserved. • contact@kanundigital.com</p>
+        </div>
+    </footer>
+</body>
+</html>
