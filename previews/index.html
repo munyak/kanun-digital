@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KaNun Digital — Preview Options</title>
+  <style>
+    :root{--bg:#0b0e14;--panel:#121827;--ink:#f6f8ff;--muted:rgba(246,248,255,.72);--line:rgba(246,248,255,.14);--cta:#1f4bff;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial;background:radial-gradient(1200px 600px at 20% -10%, rgba(31,75,255,.25), transparent 60%), var(--bg);color:var(--ink);}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1200px;margin:0 auto;padding:22px 18px 70px}
+    h1{margin:0;font-size:22px;letter-spacing:-0.02em}
+    p{margin:8px 0 0;color:var(--muted);line-height:1.55}
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(246,248,255,.04);font-size:13px}
+    .btn.primary{background:var(--cta);border-color:var(--cta)}
+    .grid{margin-top:18px;display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .card{grid-column:span 4;border:1px solid var(--line);border-radius:18px;background:rgba(246,248,255,.04);padding:12px}
+    .card b{display:block;font-size:13px}
+    .card span{display:block;margin-top:6px;color:var(--muted);font-size:12px}
+    .thumb{margin-top:10px;border-radius:12px;border:1px solid var(--line);overflow:hidden;background:#0a0c12}
+    .thumb img{display:block;width:100%;height:auto}
+    .hint{margin-top:14px;padding:12px;border:1px solid var(--line);border-radius:16px;background:rgba(246,248,255,.03);color:var(--muted);font-size:12px}
+    @media (max-width:900px){.card{grid-column:span 12}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>KaNun Digital — Homepage Preview Options</h1>
+    <p>Pick an option to view the full comp. These are image-based comps for quick direction lock before we implement the real site.</p>
+
+    <div class="row">
+      <a class="btn primary" href="option-01.html">Open Option 1</a>
+      <a class="btn" href="option-02.html">Open Option 2</a>
+      <a class="btn" href="option-03.html">Open Option 3</a>
+    </div>
+
+    <div class="grid">
+      <a class="card" href="option-01.html">
+        <b>Option 1 — Jay-style light (video-first)</b>
+        <span>Centered hero + big video module + lead capture + services + pro referral block.</span>
+        <div class="thumb"><img src="assets/option-01.png" alt="Option 1 thumbnail" /></div>
+      </a>
+      <a class="card" href="option-02.html">
+        <b>Option 2 — Therapy platform feel</b>
+        <span>Jay rhythm, but more Grow/Cerebral vibe and a more clinical/partner tone.</span>
+        <div class="thumb"><img src="assets/option-02.png" alt="Option 2 thumbnail" /></div>
+      </a>
+      <a class="card" href="option-03.html">
+        <b>Option 3 — Storytelling editorial</b>
+        <span>Jay rhythm with stronger brand story + who-we-help + consultation capture.</span>
+        <div class="thumb"><img src="assets/option-03.png" alt="Option 3 thumbnail" /></div>
+      </a>
+    </div>
+
+    <div class="hint">
+      Tip: open <code>file:///Users/geoffrey/.openclaw/workspace/kanun-digital/previews/index.html</code> in Safari/Chrome.
+      If you want these hosted as a temporary preview URL, say so and I’ll add a /previews route to production (or deploy to a separate branch).
+    </div>
+  </div>
+</body>
+</html>
