@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFCFA"/>
+      <stop offset="100%" stop-color="#F5F3EF"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A9B94"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-grad)"/>
+  
+  <!-- Subtle accent orbs -->
+  <circle cx="100" cy="100" r="200" fill="#6B5B95" opacity="0.08"/>
+  <circle cx="1100" cy="530" r="250" fill="#4A9B94" opacity="0.06"/>
+  
+  <!-- Logo mark -->
+  <g transform="translate(80, 240)">
+    <rect width="80" height="80" rx="20" fill="url(#accent-grad)"/>
+    <path d="M28 20v40M28 40l22-20M28 40l22 20" stroke="#FDFCFA" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <circle cx="58" cy="58" r="6" fill="#FDFCFA" opacity="0.85"/>
+  </g>
+  
+  <!-- Brand name -->
+  <text x="180" y="295" font-family="Georgia, serif" font-size="48" font-weight="500" fill="#1A1A1A">
+    <tspan>KaNun</tspan>
+    <tspan fill="#6B5B95"> Digital</tspan>
+  </text>
+  
+  <!-- Tagline -->
+  <text x="80" y="380" font-family="Georgia, serif" font-size="36" fill="#1A1A1A">
+    Digital peace of mind for your family.
+  </text>
+  
+  <!-- Subtext -->
+  <text x="80" y="440" font-family="system-ui, sans-serif" font-size="20" fill="#5A5A5A">
+    Privacy Sweeps · Custody Tech · Kids Safety · Device Intervention
+  </text>
+  
+  <!-- Location -->
+  <text x="80" y="540" font-family="system-ui, sans-serif" font-size="18" fill="#8A8A8A">
+    Los Angeles · Trusted by therapists and family attorneys · 21+ years experience
+  </text>
+</svg>

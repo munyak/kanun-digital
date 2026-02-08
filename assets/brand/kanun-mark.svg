@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- KaNun Digital mark: protective arch + K monogram (vector, single-file) -->
+  <rect x="24" y="24" width="464" height="464" rx="120" fill="#F6F3EE"/>
+
+  <!-- Arch / canopy -->
+  <path d="M128 236C128 156.472 192.472 92 272 92C345.196 92 405.752 146.942 415.3 217.5" stroke="#9FB7A5" stroke-width="28" stroke-linecap="round"/>
+
+  <!-- Inner arch accent -->
+  <path d="M160 252C160 190.144 210.144 140 272 140C329.022 140 376.825 181.874 384 236" stroke="#1A1A2E" stroke-width="18" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- K monogram -->
+  <path d="M190 332V212" stroke="#1A1A2E" stroke-width="32" stroke-linecap="round"/>
+  <path d="M234 272L322 212" stroke="#1A1A2E" stroke-width="32" stroke-linecap="round"/>
+  <path d="M234 272L332 332" stroke="#1A1A2E" stroke-width="32" stroke-linecap="round"/>
+
+  <!-- Family dot -->
+  <circle cx="348" cy="352" r="14" fill="#9FB7A5"/>
+</svg>

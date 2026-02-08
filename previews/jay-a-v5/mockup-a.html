@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KaNun Digital — Mockup A: Editorial Warmth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --panel: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5a5a5a;
+      --accent: #4a3d8f;
+      --accent2: #2d9a8f;
+      --warm: #e8d5b8;
+      --line: rgba(26,26,26,.08);
+      --shadow: 0 20px 60px rgba(26,26,26,.08);
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 18px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(250,249,247,.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -.01em;
+    }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+    .nav-links a { text-decoration: none; transition: color .2s; }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta {
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all .2s;
+    }
+    .nav-cta:hover { background: #3d3278; transform: translateY(-1px); }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      padding: 140px 32px 80px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; padding: 120px 24px 60px; }
+    }
+    .hero-content { max-width: 560px; }
+    .kicker {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(42px, 5vw, 56px);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -.02em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 48ch;
+      margin-bottom: 32px;
+    }
+    .ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 28px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all .25s;
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      box-shadow: 0 16px 50px rgba(74,61,143,.22);
+    }
+    .btn.primary:hover { transform: translateY(-2px); box-shadow: 0 20px 60px rgba(74,61,143,.28); }
+    .btn.secondary {
+      background: transparent;
+      border: 1.5px solid var(--line);
+      color: var(--text);
+    }
+    .btn.secondary:hover { background: rgba(26,26,26,.03); }
+
+    /* Hero image */
+    .hero-image {
+      position: relative;
+    }
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+    .hero-float {
+      position: absolute;
+      bottom: -24px;
+      left: -24px;
+      background: var(--panel);
+      padding: 20px 24px;
+      border-radius: 16px;
+      box-shadow: 0 16px 50px rgba(26,26,26,.12);
+      max-width: 240px;
+    }
+    .hero-float-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 6px;
+    }
+    .hero-float-text {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* Trust strip */
+    .trust {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+    }
+    .trust-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .trust-logos {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      opacity: .7;
+    }
+
+    /* Services */
+    .services {
+      padding: 100px 32px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 60px;
+    }
+    .section-header h2 {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4vw, 42px);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .section-header p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 1000px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
+    .service-card {
+      background: var(--panel);
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: 0 8px 30px rgba(26,26,26,.05);
+      transition: all .25s;
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 16px 50px rgba(26,26,26,.10); }
+    .service-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(74,61,143,.12), rgba(45,154,143,.08));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      font-size: 20px;
+    }
+    .service-card h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .service-card p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    /* Approach */
+    .approach {
+      padding: 80px 32px;
+      background: linear-gradient(180deg, transparent, rgba(232,213,184,.15), transparent);
+    }
+    .approach-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media (max-width: 900px) { .approach-inner { grid-template-columns: 1fr; } }
+    .approach h2 {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3.5vw, 36px);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .approach p {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .step-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-text h4 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .step-text p {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* Referral block */
+    .referral {
+      background: var(--panel);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 16px 60px rgba(26,26,26,.08);
+    }
+    .referral h3 {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .referral p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    .referral-chips {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .chip {
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(45,154,143,.08);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent2);
+    }
+
+    /* Contact */
+    .contact {
+      padding: 100px 32px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .contact-card {
+      background: var(--panel);
+      border-radius: 24px;
+      padding: 48px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .contact h2 {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3.5vw, 36px);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .contact p {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    .form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      text-align: left;
+    }
+    @media (max-width: 600px) { .form { grid-template-columns: 1fr; } }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+    .field input, .field select, .field textarea {
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--bg);
+      font-size: 15px;
+      font-family: inherit;
+      color: var(--text);
+      outline: none;
+      transition: border-color .2s;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      border-color: var(--accent);
+    }
+    .field textarea { min-height: 120px; resize: vertical; }
+    .form-cta {
+      grid-column: 1 / -1;
+      margin-top: 8px;
+    }
+    .form-cta .btn { width: 100%; justify-content: center; }
+    .notice {
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 40px 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <span>KaNun Digital</span>
+    </div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#approach">How It Works</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="#contact">Request a Quote</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="kicker">Confidential • Los Angeles • Worldwide</div>
+      <h1>Technology guidance for families.</h1>
+      <p>Clear, practical help with devices, accounts, and home networks — so you can focus on what matters most.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#contact">Request a Confidential Quote</a>
+        <a class="btn secondary" href="#services">See Services</a>
+      </div>
+      <div class="trust">
+        <div class="trust-label">Trusted experience from</div>
+        <div class="trust-logos">
+          <span>Netflix</span>
+          <span>Sony</span>
+          <span>Everbridge</span>
+          <span>21+ Years</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop&auto=format" alt="Family comfort">
+      <div class="hero-float">
+        <div class="hero-float-label">Our approach</div>
+        <div class="hero-float-text">Calm guidance. Clear steps. Lasting improvements.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <h2>How we help</h2>
+      <p>Practical solutions for everyday digital challenges. Clear scope, plain language, no jargon.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🛡️</div>
+        <h3>Privacy & Safety Upgrade</h3>
+        <p>Strengthen accounts, review devices, and clean up your home network for better peace of mind.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚖️</div>
+        <h3>Custody Tech Support</h3>
+        <p>Help for parents and attorneys with device sharing, communication workflows, and digital evidence basics.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Screen Time Reset</h3>
+        <p>Assessment and setup for healthier device habits. Better controls, better boundaries.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">👨‍👩‍👧</div>
+        <h3>Kids Online Safety</h3>
+        <p>Filtering, app safety, and parent training for safer defaults as kids grow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach -->
+  <section class="approach" id="approach">
+    <div class="approach-inner">
+      <div>
+        <h2>How it works</h2>
+        <p>Simple process. Clear communication. No surprises.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <h4>Intake</h4>
+              <p>You share what's happening. We listen and ask clarifying questions.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <h4>Assessment</h4>
+              <p>We review accounts, devices, or network — whatever's needed.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <h4>Improvements</h4>
+              <p>Clear recommendations, hands-on help, and a summary you can keep.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="referral">
+        <h3>For therapists & attorneys</h3>
+        <p>We work alongside professionals who refer clients with digital concerns. Clean intake, clear scope, privacy-first workflow.</p>
+        <div class="referral-chips">
+          <span class="chip">Clear scope</span>
+          <span class="chip">Plain-language summary</span>
+          <span class="chip">Optional technical appendix</span>
+          <span class="chip">Confidential by default</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-card">
+      <h2>Request a Confidential Quote</h2>
+      <p>Tell us what you need. We'll reply with next steps and a scope estimate.</p>
+      <div class="form">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label>Email or phone</label>
+          <input type="text" placeholder="you@email.com or (###) ###-####">
+        </div>
+        <div class="field">
+          <label>Location / time zone</label>
+          <input type="text" placeholder="Los Angeles, PST">
+        </div>
+        <div class="field">
+          <label>Urgency</label>
+          <select>
+            <option>Flexible</option>
+            <option>This week</option>
+            <option>Today / Urgent</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>What's happening (briefly)</label>
+          <textarea placeholder="A few sentences is enough. We'll follow up with questions if needed."></textarea>
+        </div>
+        <div class="form-cta">
+          <a class="btn primary" href="#">Submit Request</a>
+        </div>
+      </div>
+      <p class="notice">If you're in immediate danger, call local emergency services.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Kanun Digital. Los Angeles, CA.</p>
+  </footer>
+</body>
+</html>

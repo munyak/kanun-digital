@@ -1,4 +1,17 @@
+# KaNun Digital - robots.txt
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://kanun.digital/sitemap.xml
+
+# Crawl-delay (be nice to servers)
+Crawl-delay: 1
+
+# Block preview/draft pages
+Disallow: /previews/
+Disallow: /brand/preview.html
+
+# Allow important resources
+Allow: /brand/*.svg
+Allow: /brand/*.png
