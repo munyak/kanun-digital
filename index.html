@@ -230,7 +230,20 @@
       align-items: center;
       overflow: hidden;
     }
-    /* Abstract animated background */
+    /* Hero image */
+    .hero-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      z-index: 0;
+      filter: saturate(0.9);
+    }
+    
+    /* Abstract animated accents (on top of image) */
     .hero-abstract {
       position: absolute;
       top: 0;
@@ -238,7 +251,9 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-      z-index: 0;
+      z-index: 1;
+      mix-blend-mode: soft-light;
+      opacity: 0.7;
     }
     .hero-orb {
       position: absolute;
@@ -284,10 +299,10 @@
       right: 0;
       bottom: 0;
       background: 
-        linear-gradient(135deg, rgba(253,252,250,.96) 0%, rgba(253,252,250,.88) 40%, rgba(253,252,250,.75) 100%),
-        radial-gradient(ellipse at 20% 30%, rgba(107,91,149,.08) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 70%, rgba(74,155,148,.06) 0%, transparent 50%);
-      z-index: 1;
+        linear-gradient(135deg, rgba(253,252,250,.92) 0%, rgba(253,252,250,.82) 35%, rgba(253,252,250,.65) 100%),
+        radial-gradient(ellipse at 20% 30%, rgba(107,91,149,.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(74,155,148,.08) 0%, transparent 50%);
+      z-index: 2;
     }
     .hero-content {
       position: relative;
@@ -1155,8 +1170,9 @@
     </div>
   </nav>
 
-  <!-- Hero with Abstract Animated Background -->
+  <!-- Hero with Image + Abstract Accents -->
   <section class="hero">
+    <img class="hero-image" src="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=1920&q=80&auto=format" alt="Warm home environment">
     <div class="hero-abstract">
       <div class="hero-orb hero-orb-1"></div>
       <div class="hero-orb hero-orb-2"></div>
