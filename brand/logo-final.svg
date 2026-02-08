@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <defs>
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A9B94"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- The Minimal Mark -->
+  <g transform="translate(4, 4)">
+    <!-- Rounded square container -->
+    <rect x="0" y="0" width="52" height="52" rx="13" fill="url(#brand-grad)"/>
+    
+    <!-- Abstract K form -->
+    <path d="M18 12 L18 40" stroke="#FDFCFA" stroke-width="4" stroke-linecap="round"/>
+    <path d="M18 26 L34 12" stroke="#FDFCFA" stroke-width="4" stroke-linecap="round"/>
+    <path d="M18 26 L34 40" stroke="#FDFCFA" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Accent dot -->
+    <circle cx="40" cy="40" r="4" fill="#FDFCFA" opacity="0.85"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="72" y="40" 
+        font-family="Cormorant Garamond, Georgia, serif" 
+        font-size="32" 
+        font-weight="500" 
+        fill="#1A1A1A"
+        letter-spacing="-0.02em">
+    <tspan>KaNun</tspan>
+    <tspan fill="#6B5B95" font-weight="400"> Digital</tspan>
+  </text>
+</svg>

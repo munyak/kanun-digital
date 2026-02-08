@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="mark-emb-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A9B94"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Embrace Mark: Two curves creating protective enclosure -->
+  <g transform="translate(6, 6)">
+    <!-- Left embrace -->
+    <path d="M26 4 C8 4 4 18 4 30 C4 42 8 56 26 56" 
+          stroke="#6B5B95" 
+          stroke-width="4" 
+          stroke-linecap="round"
+          fill="none"/>
+    
+    <!-- Right embrace -->
+    <path d="M26 4 C44 4 48 18 48 30 C48 42 44 56 26 56" 
+          stroke="#4A9B94" 
+          stroke-width="4" 
+          stroke-linecap="round"
+          fill="none"/>
+    
+    <!-- What's being protected -->
+    <circle cx="26" cy="30" r="6" fill="url(#mark-emb-grad)"/>
+  </g>
+</svg>

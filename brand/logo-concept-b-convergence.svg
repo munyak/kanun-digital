@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="conv-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A9B94"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- The Convergence Mark: Two forms meeting in harmony -->
+  <g transform="translate(6, 6)">
+    <!-- Left arc rising -->
+    <path d="M8 40 Q8 8 24 8" 
+          stroke="#6B5B95" 
+          stroke-width="4" 
+          stroke-linecap="round"
+          fill="none"/>
+    <!-- Right arc rising -->
+    <path d="M40 40 Q40 8 24 8" 
+          stroke="#4A9B94" 
+          stroke-width="4" 
+          stroke-linecap="round"
+          fill="none"/>
+    <!-- Convergence point (subtle glow) -->
+    <circle cx="24" cy="8" r="5" fill="url(#conv-grad)" opacity="0.9"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="68" y="40" 
+        font-family="Cormorant Garamond, Georgia, serif" 
+        font-size="32" 
+        font-weight="500" 
+        fill="#1A1A1A"
+        letter-spacing="-0.02em">
+    <tspan>KaNun</tspan>
+    <tspan fill="#6B5B95" font-weight="400"> Digital</tspan>
+  </text>
+</svg>

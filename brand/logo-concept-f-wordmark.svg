@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <defs>
+    <linearGradient id="wm-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A9B94"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Pure Wordmark: Custom refined typography -->
+  <!-- The K has a distinctive diagonal treatment -->
+  <text x="10" y="42" 
+        font-family="Cormorant Garamond, Georgia, serif" 
+        font-size="38" 
+        font-weight="600" 
+        fill="#1A1A1A"
+        letter-spacing="-0.03em">KaNun</text>
+  
+  <!-- Accent bar under "KaNun" -->
+  <rect x="10" y="48" width="95" height="2" rx="1" fill="url(#wm-grad)"/>
+  
+  <!-- "Digital" in refined lighter weight -->
+  <text x="115" y="42" 
+        font-family="Cormorant Garamond, Georgia, serif" 
+        font-size="38" 
+        font-weight="400" 
+        fill="#6B5B95"
+        letter-spacing="-0.01em">Digital</text>
+</svg>

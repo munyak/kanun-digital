@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="min-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A9B94"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- The Minimal Mark: Clean geometric abstraction -->
+  <g transform="translate(6, 6)">
+    <!-- Rounded square container -->
+    <rect x="2" y="2" width="44" height="44" rx="12" 
+          fill="url(#min-grad)"/>
+    
+    <!-- Abstract K form in negative space -->
+    <path d="M16 12 L16 36 M16 24 L28 12 M16 24 L28 36" 
+          stroke="#FDFCFA" 
+          stroke-width="3.5" 
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"/>
+    
+    <!-- Subtle dot accent -->
+    <circle cx="34" cy="36" r="3" fill="#FDFCFA" opacity="0.9"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="68" y="40" 
+        font-family="Cormorant Garamond, Georgia, serif" 
+        font-size="32" 
+        font-weight="500" 
+        fill="#1A1A1A"
+        letter-spacing="-0.02em">
+    <tspan>KaNun</tspan>
+    <tspan fill="#6B5B95" font-weight="400"> Digital</tspan>
+  </text>
+</svg>

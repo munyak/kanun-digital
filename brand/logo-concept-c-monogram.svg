@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="mono-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A9B94"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- The Monogram: K + N ligature in refined geometry -->
+  <g transform="translate(4, 4)">
+    <!-- Containing circle (subtle) -->
+    <circle cx="26" cy="26" r="25" stroke="url(#mono-grad)" stroke-width="2" fill="none" opacity="0.15"/>
+    
+    <!-- K stem -->
+    <path d="M16 12 L16 40" stroke="#6B5B95" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- K diagonal arms -->
+    <path d="M16 26 L28 12" stroke="#6B5B95" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M20 26 L32 40" stroke="#4A9B94" stroke-width="3.5" stroke-linecap="round"/>
+    
+    <!-- N (sharing the diagonal) -->
+    <path d="M32 40 L32 12" stroke="#4A9B94" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M36 12 L36 40" stroke="#4A9B94" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="68" y="40" 
+        font-family="Cormorant Garamond, Georgia, serif" 
+        font-size="32" 
+        font-weight="500" 
+        fill="#1A1A1A"
+        letter-spacing="-0.02em">
+    <tspan>KaNun</tspan>
+    <tspan fill="#6B5B95" font-weight="400"> Digital</tspan>
+  </text>
+</svg>

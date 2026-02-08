@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <defs>
+    <linearGradient id="haven-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A9B94"/>
+    </linearGradient>
+    <linearGradient id="haven-grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#4A9B94" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- The Haven Mark: Abstract shelter/home form -->
+  <g transform="translate(4, 4)">
+    <!-- Outer arch (protection) -->
+    <path d="M6 44 Q6 6 26 6 Q46 6 46 44" 
+          stroke="url(#haven-grad)" 
+          stroke-width="3" 
+          stroke-linecap="round"
+          fill="none"/>
+    
+    <!-- Inner arch (family/core) -->
+    <path d="M14 44 Q14 18 26 18 Q38 18 38 44" 
+          stroke="url(#haven-grad)" 
+          stroke-width="2.5" 
+          stroke-linecap="round"
+          fill="url(#haven-grad-light)"/>
+    
+    <!-- Center element (the protected) -->
+    <circle cx="26" cy="32" r="4" fill="url(#haven-grad)"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="66" y="40" 
+        font-family="Cormorant Garamond, Georgia, serif" 
+        font-size="32" 
+        font-weight="500" 
+        fill="#1A1A1A"
+        letter-spacing="-0.02em">
+    <tspan>KaNun</tspan>
+    <tspan fill="#6B5B95" font-weight="400"> Digital</tspan>
+  </text>
+</svg>

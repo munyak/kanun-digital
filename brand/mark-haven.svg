@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="mark-haven-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A9B94"/>
+    </linearGradient>
+    <linearGradient id="mark-haven-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4A9B94" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Haven Mark: Standalone icon -->
+  <g transform="translate(8, 6)">
+    <!-- Outer protective arch -->
+    <path d="M4 52 Q4 4 24 4 Q44 4 44 52" 
+          stroke="url(#mark-haven-grad)" 
+          stroke-width="4" 
+          stroke-linecap="round"
+          fill="none"/>
+    
+    <!-- Inner family arch -->
+    <path d="M12 52 Q12 18 24 18 Q36 18 36 52" 
+          stroke="url(#mark-haven-grad)" 
+          stroke-width="3" 
+          stroke-linecap="round"
+          fill="url(#mark-haven-light)"/>
+    
+    <!-- Core (what's protected) -->
+    <circle cx="24" cy="36" r="5" fill="url(#mark-haven-grad)"/>
+  </g>
+</svg>

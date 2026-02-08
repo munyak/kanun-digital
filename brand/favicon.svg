@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="fav-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#4A9B94"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded square container -->
+  <rect x="0" y="0" width="32" height="32" rx="8" fill="url(#fav-grad)"/>
+  
+  <!-- Abstract K form -->
+  <path d="M11 7v18" stroke="#FDFCFA" stroke-width="3" stroke-linecap="round"/>
+  <path d="M11 16l9-9" stroke="#FDFCFA" stroke-width="3" stroke-linecap="round"/>
+  <path d="M11 16l9 9" stroke="#FDFCFA" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Accent dot -->
+  <circle cx="24" cy="25" r="2.5" fill="#FDFCFA" opacity="0.85"/>
+</svg>
