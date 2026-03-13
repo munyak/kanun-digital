@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KaNun Digital | Calm, credible digital safety for families & professionals</title>
-  <meta name="description" content="Los Angeles family digital safety consultant. Privacy sweeps, custody tech support, kids online safety, screen time help. 21+ years enterprise security (Netflix, Sony). Trusted by therapists and family attorneys." />
+  <title>KaNun Digital | Digital Safety for Families</title>
+  <meta name="description" content="Enterprise security expertise for families. Device setup, account hardening, screen time management, and safety guidance from Netflix security leader." />
   <link rel="canonical" href="https://kanun.digital/">
   
   <!-- Additional SEO -->
@@ -1298,6 +1298,83 @@
     }
     .footer-social a:hover { color: #fff; }
     .footer-social svg { width: 20px; height: 20px; }
+
+    /* ═══════════════════════════════════════════
+       FIX #1: Mobile Responsiveness & Overflow
+    ═══════════════════════════════════════════ */
+    html, body { width: 100%; overflow-x: hidden; }
+    img, video, iframe { max-width: 100%; height: auto; display: block; }
+    .container, .container-narrow { width: 100%; max-width: 100%; padding: 0 var(--space-md); }
+    
+    /* ═══════════════════════════════════════════
+       FIX #4: Minimum Touch Target Size (44×44px)
+    ═══════════════════════════════════════════ */
+    a, button, input[type="button"], input[type="submit"], input[type="reset"] {
+      min-width: 44px;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-links a { padding: 12px 16px; }
+    .nav-cta { min-width: 44px; min-height: 44px; }
+    .btn { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+    .footer-social a { min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+    .newsletter-input + .btn { min-width: 44px; min-height: 44px; }
+
+    /* ═══════════════════════════════════════════
+       FIX #5: Form Accessibility
+    ═══════════════════════════════════════════ */
+    .form-group { margin-bottom: var(--space-md); }
+    label { display: block; margin-bottom: 8px; font-weight: 500; font-size: 14px; color: var(--text); }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-sm);
+      font-family: var(--sans);
+      font-size: 16px;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-light);
+    }
+    input[type="password"] { autocomplete: "current-password"; }
+
+    /* ═══════════════════════════════════════════
+       FIX #8: Image Alt Text & Accessibility
+    ═══════════════════════════════════════════ */
+    img { display: block; max-width: 100%; height: auto; }
+    svg { max-width: 100%; height: auto; }
+
+    /* ═══════════════════════════════════════════
+       Mobile Media Query Improvements
+    ═══════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .container, .container-narrow { padding: 0 var(--space-sm); }
+      .nav { padding: var(--space-xs) var(--space-sm); }
+      .nav-links { gap: var(--space-sm); }
+      .nav-links a { font-size: 13px; }
+      button, .btn { min-width: 44px; min-height: 44px; padding: 12px 16px; }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea { font-size: 16px; padding: 12px 16px; }
+    }
+    @media (max-width: 480px) {
+      .container, .container-narrow { padding: 0 12px; }
+      .nav { padding: 8px 12px; }
+      .nav-links { flex-direction: column; gap: 8px; }
+      .footer-inner { flex-direction: column; gap: var(--space-md); }
+    }
   </style>
 </head>
 <body>
@@ -1688,9 +1765,10 @@
           <p>Practical guidance delivered to your inbox. No overwhelm, just helpful tips.</p>
         </div>
         <form class="newsletter-form" action="https://formspree.io/f/mykdyqjj" method="POST">
-          <input type="email" name="email" class="newsletter-input" placeholder="Enter your email" required>
+          <label for="newsletter-email" style="position: absolute; left: -9999px;">Email address</label>
+          <input id="newsletter-email" type="email" name="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address" autocomplete="email">
           <input type="hidden" name="_subject" value="New Newsletter Signup - Kanun Digital">
-          <button type="submit" class="btn btn-primary">Subscribe</button>
+          <button type="submit" class="btn btn-primary" aria-label="Subscribe to newsletter">Subscribe</button>
         </form>
       </div>
     </div>
