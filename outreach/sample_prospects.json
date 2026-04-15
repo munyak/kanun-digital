@@ -1,0 +1,121 @@
+{
+  "sarah@familyfirst.com: Dr. Sarah Thompson": {
+    "name": "Dr. Sarah Thompson",
+    "title": "LMFT",
+    "practice_name": "Family First Therapy",
+    "email": "sarah@familyfirst.com",
+    "phone": "555-123-4567",
+    "website": "https://familyfirst-therapy.com",
+    "directory_url": "https://www.psychologytoday.com/us/therapists/sarah-thompson",
+    "specialties": ["divorce", "family therapy", "child therapy"],
+    "state": "CA",
+    "city": "Los Angeles",
+    "validation_score": 4,
+    "validation_notes": "Website live (200 OK); email + phone verified; content recent; Psychology Today profile active",
+    "outreach_status": "pending",
+    "date_added": "2026-04-15T10:30:00.123456",
+    "outreach_history": []
+  },
+  "john@martinezlaw.com: John Martinez, Esq.": {
+    "name": "John Martinez, Esq.",
+    "title": "JD",
+    "practice_name": "Martinez Family Law",
+    "email": "john@martinezlaw.com",
+    "phone": "555-987-6543",
+    "website": "https://martinezfamilylaw.com",
+    "directory_url": "https://www.avvo.com/attorneys/90001_ca_family-law_martinez.html",
+    "specialties": ["custody", "divorce", "child support"],
+    "state": "CA",
+    "city": "Los Angeles",
+    "validation_score": 5,
+    "validation_notes": "Website live; email + phone verified; recent blog post; Avvo profile rated 4.8/5",
+    "outreach_status": "contacted",
+    "date_added": "2026-04-14T14:15:00.789012",
+    "outreach_history": [
+      {
+        "event": "email_sent",
+        "template": "lawyer_initial_variant1",
+        "timestamp": "2026-04-15T09:00:00"
+      }
+    ]
+  },
+  "michael@therapeuticsolutions.com: Dr. Michael Chen": {
+    "name": "Dr. Michael Chen",
+    "title": "LCSW, PhD",
+    "practice_name": "Therapeutic Solutions Center",
+    "email": "michael@therapeuticsolutions.com",
+    "phone": "555-456-7890",
+    "website": "https://therapeuticsolutions.com",
+    "directory_url": "https://www.psychologytoday.com/us/therapists/michael-chen",
+    "specialties": ["family therapy", "children", "adolescent"],
+    "state": "CA",
+    "city": "San Francisco",
+    "validation_score": 3,
+    "validation_notes": "Website redirects (301); email verified; phone not found on site; Psychology Today profile moderate content recency",
+    "outreach_status": "pending",
+    "date_added": "2026-04-15T11:45:00.456789",
+    "outreach_history": []
+  },
+  "lisa@mediationcenter.com: Lisa Rodriguez": {
+    "name": "Lisa Rodriguez",
+    "title": "Certified Family Mediator",
+    "practice_name": "Bay Area Mediation Center",
+    "email": "lisa@mediationcenter.com",
+    "phone": "555-654-3210",
+    "website": "https://bayareamediationcenter.com",
+    "directory_url": "https://www.mediators.org/directory/lisa-rodriguez",
+    "specialties": ["family mediation", "divorce mediation", "co-parenting"],
+    "state": "CA",
+    "city": "San Francisco",
+    "validation_score": 4,
+    "validation_notes": "Website live; email + phone verified; recent testimonials; IMTA member",
+    "outreach_status": "pending",
+    "date_added": "2026-04-15T13:20:00.234567",
+    "outreach_history": []
+  },
+  "david@familylaw.com: David Kim": {
+    "name": "David Kim",
+    "title": "JD, LLM",
+    "practice_name": "Kim & Associates Family Law",
+    "email": "david@familylaw.com",
+    "phone": "555-321-0987",
+    "website": "https://kimandfamilylaw.com",
+    "directory_url": "https://www.avvo.com/attorneys/90401_ca_family-law_kim.html",
+    "specialties": ["custody disputes", "divorce", "mediation", "digital evidence"],
+    "state": "CA",
+    "city": "Santa Monica",
+    "validation_score": 2,
+    "validation_notes": "Website unreachable (timeout); email found in cached page; phone on Avvo profile; address stale (2 years)",
+    "outreach_status": "pending",
+    "date_added": "2026-04-15T12:10:00.567890",
+    "outreach_history": []
+  },
+  "jennifer@healing.com: Jennifer Lee, MA": {
+    "name": "Jennifer Lee, MA",
+    "title": "LMFT",
+    "practice_name": "Healing Relationships Therapy",
+    "email": "jennifer@healing.com",
+    "phone": null,
+    "website": "https://healingrelationships.com",
+    "directory_url": "https://www.psychologytoday.com/us/therapists/jennifer-lee",
+    "specialties": ["family therapy", "divorce", "children"],
+    "state": "CA",
+    "city": "San Diego",
+    "validation_score": 3,
+    "validation_notes": "Website live; email verified; phone not available; content moderately recent",
+    "outreach_status": "responded",
+    "date_added": "2026-04-13T09:00:00.111111",
+    "outreach_history": [
+      {
+        "event": "email_sent",
+        "template": "therapist_initial_variant1",
+        "timestamp": "2026-04-14T10:00:00"
+      },
+      {
+        "event": "response_received",
+        "timestamp": "2026-04-15T16:30:00",
+        "summary": "Interested in learning more. Scheduled call for 4/22."
+      }
+    ]
+  }
+}
