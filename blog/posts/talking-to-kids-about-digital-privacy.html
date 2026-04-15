@@ -31,6 +31,21 @@
       background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
       padding: 120px 0 60px;
       color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-hero-img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.18;
+      filter: saturate(0.7);
+    }
+    .blog-hero .container {
+      position: relative;
+      z-index: 1;
     }
     .blog-hero .container { max-width: 800px; }
     .blog-meta { font-size: 0.875rem; color: rgba(255,255,255,0.6); margin-bottom: 1rem; }
@@ -67,6 +82,7 @@
   </nav>
 
   <section class="blog-hero">
+    <img class="blog-hero-img" src="https://images.pexels.com/photos/4473873/pexels-photo-4473873.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Parent talking with child about online safety" loading="eager">
     <div class="container">
       <div class="blog-meta">
         <span class="blog-category">Parenting</span> &nbsp;·&nbsp; April 15, 2026 &nbsp;·&nbsp; 5 min read
