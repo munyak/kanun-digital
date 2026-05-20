@@ -13,7 +13,7 @@ The forms currently point to a placeholder Formspree endpoint. You need to:
 5. Update these files with your actual endpoint:
    - `previews/premium-jay/index.html` (two places: contact form & newsletter)
 
-Search for `formspree.io/f/xwpkpqvd` and replace with your actual endpoint.
+Search for `formspree.io/f/mykdyqjj` and replace with your actual endpoint.
 
 ### 2. Copy Files to Production Root
 
